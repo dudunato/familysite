@@ -42,7 +42,7 @@ function errorAlert(err) {
 /**
  * Push build to gh-pages
  */
-gulp.task('deploy-gh', function () {
+gulp.task('deploy', function () {
   return gulp.src("_site/**/*")
     .pipe(deploy())
 });
