@@ -1,13 +1,9 @@
 {
-  "name": "bourbonify-jekyll",
+  "name": "familysite",
   "version": "1.0.0",
-  "authors": "Andrzej Kłapeć",
-  "description": "Simple boilerplate for quickly setting up Jekyll with Normalize, Bourbon and Neat.",
-  "license": "MIT",
-  "homepage": "http://github.com/klapec/jekyll-bourbonify",
   "dependencies": {
-    "normalize.css": "~3.0.2",
-    "bourbon": "~4.1.0",
-    "neat": "~1.7.1"
+    "normalize-css": "3.0.3",
+    "bourbon": "4.2.3",
+    "neat": "1.7.2"
   }
 }
