@@ -22,13 +22,14 @@ $large: new-breakpoint(min-breakpoint 1024px 12);
 
 
 // COLORS
-$blue: #477DCA;
+$blue: #276deb;
 $dark-gray: #333;
 $medium-gray: #999;
 $light-gray: #DDD;
+$newgreen: #B0FF00;
 
 // Background Color
-$base-background-color: white;
+$base-background-color: rgba(245,245,245,.4);
 
 // Font Colors
 $base-font-color: $dark-gray;

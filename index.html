@@ -2,15 +2,52 @@
 layout: default
 ---
 
-  <h3>Posts</h3>
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <h4>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h4>
-      </li>
-    {% endfor %}
-  </ul>
+<div class="homepage">
+
+  <div class="posts title-blocks">
+    <h3>{% t global.posts %}</h3>
+    <ul class="post-list">
+      {% for post in paginator.posts %}
+        <li>
+          <span class="post-meta">{{ post.date | date: "%-d/%-m/%y" }}</span>
+          <h4>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h4>
+        </li>
+      {% endfor %}
+    </ul>
+
+    <!-- Pagination links -->
+    {% if paginator.total_pages > 1 %}
+    <div class="nav-arrows">
+      {% if paginator.previous_page == 1 %}
+      <a href="{% t global.lang_path %}/" class="nav-left">{% t navigation.previous %}</a>
+      {% elsif paginator.previous_page %}
+        <a href="{% t global.lang_path %}/page{{ paginator.previous_page }}" class="nav-left">{% t navigation.previous %}</a>
+      {% else %}
+        <span class="nav-left">{% t navigation.previous %}</span>
+      {% endif %}
+      <span class="nav-page_number">{% t navigation.page %}: {{ paginator.page }} {% t navigation.of %} {{ paginator.total_pages }}</span>
+      {% if paginator.next_page %}
+        <a href="{% t global.lang_path %}/page{{ paginator.next_page }}" class="nav-right">{% t navigation.next %}</a>
+      {% else %}
+        <span class="nav-right">{% t navigation.next %}</span>
+      {% endif %}
+    </div>
+    {% endif %}
+  </div>
+
+  <div class="facebook-feed title-blocks">
+    <h3>{% t global.news %}</h3>
+    <div class="fb-page" data-href="https://www.facebook.com/natofamily" data-width="500px" data-height="500px" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false" data-show-posts="true" data-hide-cta="false">
+      <div class="fb-xfbml-parse-ignore">
+        <blockquote cite="https://www.facebook.com/natofamily">
+          <a href="https://www.facebook.com/natofamily">Family Nato</a>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+
+  
+</div>
   <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> --> 

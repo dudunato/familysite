@@ -5,6 +5,8 @@
   color: $medium-gray;
   font-size: 15px;
   padding-top: $gutter;
+  padding-bottom: $gutter;
+  background: white;
 
   div {
     overflow: hidden;
@@ -17,23 +19,46 @@
 }
 
 .footer-details-site {
-  @include span-columns(4 of 12);
-  @include media($small) {
-    @include span-columns(4)
-  }
+  width: 100%;
+  text-align: center;
 }
 
 .footer-details-social {
-  @include span-columns(4 of 12);
-  @include pad();
-  @include media($small) {
-    @include span-columns(4)
-  }
+  width: 100%;
+  text-align: center;
 }
 
 .footer-details-description {
   @include span-columns(4 of 12);
   @include media($small) {
     @include span-columns(4)
+  }
+}
+
+.social-media-list {
+  display: inline-block;
+
+  li {
+    display: inline;
+
+    a {
+      display: inline-block;
+
+      span {
+        svg {
+          fill: #828282;
+          transition: 1s ease;
+        }
+      }
+
+      &:hover {
+        span {
+          svg{
+            fill: $blue;
+            transition: 1s ease;
+          }
+        }
+      }
+    }
   }
 }

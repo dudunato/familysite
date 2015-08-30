@@ -1,15 +1,76 @@
+h3 {
+  color: #7f929c;
+}
+
+
 .wrapper {
-  @include outer-container();
-  border-top: 5px solid $dark-gray;
-  padding: 1em;
+  @include outer-container(100%);
 }
 
 .page-content {
   @include span-columns(12);
   @include omega();
   padding-top: $gutter;
+  padding-bottom: $gutter;
 
   h1 {
     line-height: 1em;
   }
 }
+
+.homepage {
+  @include row();
+
+  @include media($small) {
+    margin: 5px;
+  }
+}
+
+.posts {
+  @include span-columns(4);
+  @include shift(2);
+
+  @include media($small) {
+    @include span-columns(4);
+    @include shift(0);
+  }
+}
+
+.facebook-feed {
+  @include span-columns(4);
+  @include media($small) {
+    @include span-columns(4);
+    margin-top: $gutter;
+  }
+}
+
+.title-blocks {
+  padding: 5px;
+  border-left: 1px solid $blue;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.15);
+
+  h3 {
+    background: white;
+    border-bottom: 1px solid $blue;
+    margin-bottom: 10px;
+  }
+}
+
+.nav-arrows {
+  font-size: 12px;
+  text-align: center;
+}
+
+.nav-left {
+  float: left;
+}
+
+nav.page_number {
+  display: inline-block;
+}
+
+.nav-right {
+  float: right;
+}
+
+

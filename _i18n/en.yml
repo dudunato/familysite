@@ -1,0 +1,17 @@
+global:
+  english: English
+  portuguese: Português
+  github: GitHub
+  lang: 'en'
+  donate: Donate
+  contact: Let's talk?
+  posts: Unforgettable
+  news: News
+  lang_path: ''
+  donate_link: "https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=Z986ZNT26BZXA&lc=BR&item_name=Family%20Nato&item_number=Family%20Nato%20Internacional&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted"
+
+navigation:
+  previous: Previous
+  next: Next
+  page: Page
+  of: of

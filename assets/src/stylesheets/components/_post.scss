@@ -1,3 +1,21 @@
 .post-content {
   margin-bottom: $gutter;
+  line-height: 1.6;
+  letter-spacing: .01rem;
+
+  p {
+    margin: 0;
+    padding-top: 10px;
+  }
+
+}
+
+.post-comments {
+  width: 700px;
+  margin: 0 auto;
+  padding: 5px;
+
+  @include media($small) {
+    @include span-columns(4);
+  }
 }

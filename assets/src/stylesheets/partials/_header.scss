@@ -1,6 +1,48 @@
 .site-header {
   @include span-columns(12);
   @include omega();
+  background: $blue;
+  position: relative;
+  height: 330px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.15);
+}
+
+.site-lang {
+  color: white;
+  font-style: italic;
+  text-decoration: underline;
+  display: block;
+  font-size: 13px;
+  transition: 1s ease;
+
+  &:hover {
+    color: #B0FF00;
+    transition: 1s ease;
+  }
+
+  &:visited {
+    color: white;
+
+    &:hover {
+      color: #B0FF00;
+      transition: 1s ease;
+    }
+  }
+}
+
+.site-logo {
+  fill: white;
+  height: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 1s ease;
+
+  &:hover {
+    opacity:0.5;
+    transition: 1s ease;
+  }
 }
 
 .site-title {
@@ -17,18 +59,49 @@
 }
 
 .site-nav {
-  @include span-columns(6);
+  @include span-columns(12);
   @include media($small) {
     @include span-columns(4);
   }
 
+  text-align: center;
+  margin-top: 250px;
+
   ul {
     @include row();
+    height: 44px;
+    text-align: center;
+    z-index: 9;
+    display: inline-block;
+
+    li {
+      color: white;
+      border: 1px solid white;
+      padding: 2px;
+      display: inline;
+      transition: 1s ease;
+
+      a {
+        color: white;
+        display: inline-block;
+        margin: 3px;
+      }
+
+      &:hover {
+        background: white;
+        transition: 1s ease;
+
+        a {
+          color: $blue;
+          text-decoration: none;
+        }
+      }
+    }
   }
 
   .page-link {
-    line-height: 54px;
-    float: right;
-    margin-left: 20px;
+    margin: 5px;
+    float: left;
   }
+
 }
