@@ -14,7 +14,7 @@ markdown: redcarpet
 redcarpet:
   extensions: ["smart", "autolink", "tables", "no_intra_emphasis", "strikethrough", "underline", "quote", "footnotes"]
 
-exclude: ['assets/src', 'node_modules', 'package.json', 'gulpfile.js', 'LICENSE', 'README.md', 'bourbonify-jekyll.sublime-project', 'bower_components', 'bower.json']
+exclude: ['assets/src', 'node_modules', 'package.json', 'gulpfile.js', 'LICENSE', 'README.md', 'bower_components', 'bower.json']
 
 timezone: Europe/Switzerland
 
