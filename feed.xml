@@ -3,10 +3,10 @@
   <channel>
     <title>Nato Family&#39;s Site</title>
     <description>Nato Family in Missions</description>
-    <link>/</link>
-    <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 30 Aug 2015 17:15:32 +0000</pubDate>
-    <lastBuildDate>Sun, 30 Aug 2015 17:15:32 +0000</lastBuildDate>
+    <link>familysite/</link>
+    <atom:link href="familysite/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sun, 30 Aug 2015 19:08:02 +0000</pubDate>
+    <lastBuildDate>Sun, 30 Aug 2015 19:08:02 +0000</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -23,8 +23,8 @@ I have been thinking quite a lot about our Brazil, mainly because by being abroa
 &lt;/blockquote&gt;
 </description>
         <pubDate>Sun, 30 Aug 2015 16:30:01 +0000</pubDate>
-        <link>/my-brazil/</link>
-        <guid isPermaLink="true">/my-brazil/</guid>
+        <link>familysite/my-brazil/</link>
+        <guid isPermaLink="true">familysite/my-brazil/</guid>
         
         
         <category>_i18n</category>
