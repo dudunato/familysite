@@ -3,10 +3,10 @@
   <channel>
     <title>Nato Family&#39;s Site</title>
     <description>Nato Family in Missions</description>
-    <link>/br/</link>
-    <atom:link href="/br/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 30 Aug 2015 19:12:12 +0000</pubDate>
-    <lastBuildDate>Sun, 30 Aug 2015 19:12:12 +0000</lastBuildDate>
+    <link>http://dudunato.github.io//familysite//br/</link>
+    <atom:link href="http://dudunato.github.io//familysite//br/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sun, 30 Aug 2015 19:14:22 +0000</pubDate>
+    <lastBuildDate>Sun, 30 Aug 2015 19:14:22 +0000</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -23,8 +23,8 @@ Tenho pensado muito sobre o nosso país nesses últimos dias, especialmente porq
 &lt;/blockquote&gt;
 </description>
         <pubDate>Sun, 30 Aug 2015 16:30:01 +0000</pubDate>
-        <link>/br/meu-brasil/</link>
-        <guid isPermaLink="true">/br/meu-brasil/</guid>
+        <link>http://dudunato.github.io//familysite//br/meu-brasil/</link>
+        <guid isPermaLink="true">http://dudunato.github.io//familysite//br/meu-brasil/</guid>
         
         
         <category>_i18n</category>
