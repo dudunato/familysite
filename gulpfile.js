@@ -6,6 +6,7 @@ var del           = require('del');
 var jshintStylish = require('jshint-stylish');
 var sass          = require('gulp-ruby-sass');
 var $             = require('gulp-load-plugins')();
+var deploy      = require('gulp-gh-pages');
 
 var basePath = {
   src   : 'assets/src/',
@@ -37,6 +38,14 @@ function errorAlert(err) {
   gutil.log(gutil.colors.red(err.toString()));
   this.emit("end");
 }
+
+/**
+ * Push build to gh-pages
+ */
+gulp.task('deploy-gh', function () {
+  return gulp.src("_site/**/*")
+    .pipe(deploy())
+});
 
 gulp.task('deps', ['cleanDeps', 'depsDownload', 'depsInstall', 'depsFix'], function() {
   $.notify({
