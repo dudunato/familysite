@@ -7,8 +7,8 @@ facebook_username: natofamily
 keywords: "comma, separated, keywords"
 description: "Nato Family in Missions"
 
-baseurl: "/familysite/" # prod
-url: "http://dudunato.github.io/" # prod
+baseurl: "" # prod
+url: "http://natofamily.xyz/" # prod
 # baseurl: "" # dev
 # url: "" # dev
 
