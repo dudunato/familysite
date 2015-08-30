@@ -18,9 +18,9 @@
         <li class="page-link"><a href="mailto:{{ site.email }}">{% t global.contact %}</a></li>
 
         {% if lang == 'en' %}
-          <a class="site-lang" href="/br">{% t global.portuguese %}</a>
+          <a class="site-lang" href="{{ site.baseurl }}/br">{% t global.portuguese %}</a>
         {% else %}
-          <a class="site-lang" href="/">{% t global.english %}</a>
+          <a class="site-lang" href="{{ site.baseurl }}/">{% t global.english %}</a>
         {% endif %}
       </ul>
   </nav>
