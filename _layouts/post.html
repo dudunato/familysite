@@ -12,12 +12,12 @@ layout: default
     <div class="nav-arrows">
       {% if page.previous %}
       <div class="nav-left">
-        <a href="{{ page.previous.url }}">&larr; {{ page.previous.title }}</a>
+        <a href="{% t global.lang_path %}{{ page.previous.url }}">&larr; {{ page.previous.title }}</a>
       </div>
       {% endif %}
       {% if page.next %}
       <div class="nav-right">
-        <a href="{{ page.next.url }}">{{ page.next.title }} &rarr;</a>
+        <a href="{% t global.lang_path %}{{ page.next.url }}">{{ page.next.title }} &rarr;</a>
       </div>
       {% endif %}
     </div>

@@ -2,7 +2,7 @@
   "name": "familysite",
   "version": "1.0.0",
   "dependencies": {
-    "normalize-css": "3.0.3",
+    "normalize.css": "3.0.3",
     "bourbon": "4.2.3",
     "neat": "1.7.2"
   }
