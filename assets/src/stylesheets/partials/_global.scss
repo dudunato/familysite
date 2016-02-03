@@ -26,6 +26,12 @@ h3 {
   }
 }
 
+.post {
+  @include media($small) {
+    margin: 5px;
+  }
+}
+
 .posts {
   @include span-columns(4);
   @include shift(2);
