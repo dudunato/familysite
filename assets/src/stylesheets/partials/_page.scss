@@ -1,5 +1,5 @@
 .post-header {
-  width: 700px;
+  width: 1000px;
   margin: 0 auto;
   padding: 5px;
   border-left: 1px solid $blue;
@@ -17,7 +17,7 @@
 }
 
 .post-content {
-  width: 700px;
+  width: 1000px;
   @include media($small) {
     @include span-columns(4);
   }
